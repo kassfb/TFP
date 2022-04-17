@@ -1,0 +1,102 @@
+C:\Users\user\Desktop\MNK\MNK\bin\Debug\MNK.exe.config
+C:\Users\user\Desktop\MNK\MNK\bin\Debug\MNK.exe
+C:\Users\user\Desktop\MNK\MNK\bin\Debug\MNK.pdb
+C:\Users\user\Desktop\MNK\MNK\obj\Debug\MNK.csprojAssemblyReference.cache
+C:\Users\user\Desktop\MNK\MNK\obj\Debug\MNK.Form1.resources
+C:\Users\user\Desktop\MNK\MNK\obj\Debug\MNK.Properties.Resources.resources
+C:\Users\user\Desktop\MNK\MNK\obj\Debug\MNK.csproj.GenerateResource.cache
+C:\Users\user\Desktop\MNK\MNK\obj\Debug\MNK.exe
+C:\Users\user\Desktop\MNK\MNK\obj\Debug\MNK.pdb
+C:\Users\user\Desktop\Курсач\MNK\MNK\bin\Debug\MNK.exe.config
+C:\Users\user\Desktop\Курсач\MNK\MNK\bin\Debug\MNK.exe
+C:\Users\user\Desktop\Курсач\MNK\MNK\bin\Debug\MNK.pdb
+C:\Users\user\Desktop\Курсач\MNK\MNK\obj\Debug\MNK.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Курсач\MNK\MNK\obj\Debug\MNK.Form1.resources
+C:\Users\user\Desktop\Курсач\MNK\MNK\obj\Debug\MNK.Properties.Resources.resources
+C:\Users\user\Desktop\Курсач\MNK\MNK\obj\Debug\MNK.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Курсач\MNK\MNK\obj\Debug\MNK.exe
+C:\Users\user\Desktop\Курсач\MNK\MNK\obj\Debug\MNK.pdb
+E:\ivtf4g46\Kirsanov\Курсач\MNK\MNK\bin\Debug\MNK.exe.config
+E:\ivtf4g46\Kirsanov\Курсач\MNK\MNK\bin\Debug\MNK.exe
+E:\ivtf4g46\Kirsanov\Курсач\MNK\MNK\bin\Debug\MNK.pdb
+E:\ivtf4g46\Kirsanov\Курсач\MNK\MNK\obj\Debug\MNK.csprojAssemblyReference.cache
+E:\ivtf4g46\Kirsanov\Курсач\MNK\MNK\obj\Debug\MNK.Form1.resources
+E:\ivtf4g46\Kirsanov\Курсач\MNK\MNK\obj\Debug\MNK.Properties.Resources.resources
+E:\ivtf4g46\Kirsanov\Курсач\MNK\MNK\obj\Debug\MNK.csproj.GenerateResource.cache
+E:\ivtf4g46\Kirsanov\Курсач\MNK\MNK\obj\Debug\MNK.csproj.CoreCompileInputs.cache
+E:\ivtf4g46\Kirsanov\Курсач\MNK\MNK\obj\Debug\MNK.exe
+E:\ivtf4g46\Kirsanov\Курсач\MNK\MNK\obj\Debug\MNK.pdb
+C:\Users\user\Desktop\Курсач 20.11\MNK\MNK\bin\Debug\MNK.exe.config
+C:\Users\user\Desktop\Курсач 20.11\MNK\MNK\bin\Debug\MNK.exe
+C:\Users\user\Desktop\Курсач 20.11\MNK\MNK\bin\Debug\MNK.pdb
+C:\Users\user\Desktop\Курсач 20.11\MNK\MNK\obj\Debug\MNK.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Курсач 20.11\MNK\MNK\obj\Debug\MNK.Form1.resources
+C:\Users\user\Desktop\Курсач 20.11\MNK\MNK\obj\Debug\MNK.Properties.Resources.resources
+C:\Users\user\Desktop\Курсач 20.11\MNK\MNK\obj\Debug\MNK.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Курсач 20.11\MNK\MNK\obj\Debug\MNK.exe
+C:\Users\user\Desktop\Курсач 20.11\MNK\MNK\obj\Debug\MNK.pdb
+C:\Users\user\Desktop\Проги\Курсач 20.11\MNK\MNK\bin\Debug\MNK.exe.config
+C:\Users\user\Desktop\Проги\Курсач 20.11\MNK\MNK\bin\Debug\MNK.exe
+C:\Users\user\Desktop\Проги\Курсач 20.11\MNK\MNK\bin\Debug\MNK.pdb
+C:\Users\user\Desktop\Проги\Курсач 20.11\MNK\MNK\obj\Debug\MNK.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Проги\Курсач 20.11\MNK\MNK\obj\Debug\MNK.Form1.resources
+C:\Users\user\Desktop\Проги\Курсач 20.11\MNK\MNK\obj\Debug\MNK.Properties.Resources.resources
+C:\Users\user\Desktop\Проги\Курсач 20.11\MNK\MNK\obj\Debug\MNK.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Проги\Курсач 20.11\MNK\MNK\obj\Debug\MNK.exe
+C:\Users\user\Desktop\Проги\Курсач 20.11\MNK\MNK\obj\Debug\MNK.pdb
+C:\Users\user\Desktop\Проги\Курсач 27.11\MNK\MNK\bin\Debug\MNK.exe.config
+C:\Users\user\Desktop\Проги\Курсач 27.11\MNK\MNK\bin\Debug\MNK.exe
+C:\Users\user\Desktop\Проги\Курсач 27.11\MNK\MNK\bin\Debug\MNK.pdb
+C:\Users\user\Desktop\Проги\Курсач 27.11\MNK\MNK\obj\Debug\MNK.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Проги\Курсач 27.11\MNK\MNK\obj\Debug\MNK.Form1.resources
+C:\Users\user\Desktop\Проги\Курсач 27.11\MNK\MNK\obj\Debug\MNK.Properties.Resources.resources
+C:\Users\user\Desktop\Проги\Курсач 27.11\MNK\MNK\obj\Debug\MNK.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Проги\Курсач 27.11\MNK\MNK\obj\Debug\MNK.exe
+C:\Users\user\Desktop\Проги\Курсач 27.11\MNK\MNK\obj\Debug\MNK.pdb
+C:\Users\ivtf4g46\Desktop\Курсач 04.12\MNK\MNK\bin\Debug\MNK.exe.config
+C:\Users\ivtf4g46\Desktop\Курсач 04.12\MNK\MNK\bin\Debug\MNK.exe
+C:\Users\ivtf4g46\Desktop\Курсач 04.12\MNK\MNK\bin\Debug\MNK.pdb
+C:\Users\ivtf4g46\Desktop\Курсач 04.12\MNK\MNK\obj\Debug\MNK.csprojAssemblyReference.cache
+C:\Users\ivtf4g46\Desktop\Курсач 04.12\MNK\MNK\obj\Debug\MNK.Form1.resources
+C:\Users\ivtf4g46\Desktop\Курсач 04.12\MNK\MNK\obj\Debug\MNK.Properties.Resources.resources
+C:\Users\ivtf4g46\Desktop\Курсач 04.12\MNK\MNK\obj\Debug\MNK.csproj.GenerateResource.cache
+C:\Users\ivtf4g46\Desktop\Курсач 04.12\MNK\MNK\obj\Debug\MNK.csproj.CoreCompileInputs.cache
+C:\Users\ivtf4g46\Desktop\Курсач 04.12\MNK\MNK\obj\Debug\MNK.exe
+C:\Users\ivtf4g46\Desktop\Курсач 04.12\MNK\MNK\obj\Debug\MNK.pdb
+C:\Users\user\Desktop\Проги\Курсач 04.12\MNK\MNK\bin\Debug\MNK.exe.config
+C:\Users\user\Desktop\Проги\Курсач 04.12\MNK\MNK\bin\Debug\MNK.exe
+C:\Users\user\Desktop\Проги\Курсач 04.12\MNK\MNK\bin\Debug\MNK.pdb
+C:\Users\user\Desktop\Проги\Курсач 04.12\MNK\MNK\obj\Debug\MNK.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Проги\Курсач 04.12\MNK\MNK\obj\Debug\MNK.Form1.resources
+C:\Users\user\Desktop\Проги\Курсач 04.12\MNK\MNK\obj\Debug\MNK.Properties.Resources.resources
+C:\Users\user\Desktop\Проги\Курсач 04.12\MNK\MNK\obj\Debug\MNK.csproj.GenerateResource.cache
+C:\Users\user\Desktop\Проги\Курсач 04.12\MNK\MNK\obj\Debug\MNK.exe
+C:\Users\user\Desktop\Проги\Курсач 04.12\MNK\MNK\obj\Debug\MNK.pdb
+C:\Users\user\Desktop\отчет за 23.03\С#\MNK\bin\Debug\MNK.exe.config
+C:\Users\user\Desktop\отчет за 23.03\С#\MNK\bin\Debug\MNK.exe
+C:\Users\user\Desktop\отчет за 23.03\С#\MNK\bin\Debug\MNK.pdb
+C:\Users\user\Desktop\отчет за 23.03\С#\MNK\obj\Debug\MNK.csprojAssemblyReference.cache
+C:\Users\user\Desktop\отчет за 23.03\С#\MNK\obj\Debug\MNK.Form1.resources
+C:\Users\user\Desktop\отчет за 23.03\С#\MNK\obj\Debug\MNK.Properties.Resources.resources
+C:\Users\user\Desktop\отчет за 23.03\С#\MNK\obj\Debug\MNK.csproj.GenerateResource.cache
+C:\Users\user\Desktop\отчет за 23.03\С#\MNK\obj\Debug\MNK.exe
+C:\Users\user\Desktop\отчет за 23.03\С#\MNK\obj\Debug\MNK.pdb
+C:\Users\user\Desktop\отчет за 23.03\С# линии\MNK\bin\Debug\MNK.exe.config
+C:\Users\user\Desktop\отчет за 23.03\С# линии\MNK\bin\Debug\MNK.exe
+C:\Users\user\Desktop\отчет за 23.03\С# линии\MNK\bin\Debug\MNK.pdb
+C:\Users\user\Desktop\отчет за 23.03\С# линии\MNK\obj\Debug\MNK.csprojAssemblyReference.cache
+C:\Users\user\Desktop\отчет за 23.03\С# линии\MNK\obj\Debug\MNK.Form1.resources
+C:\Users\user\Desktop\отчет за 23.03\С# линии\MNK\obj\Debug\MNK.Properties.Resources.resources
+C:\Users\user\Desktop\отчет за 23.03\С# линии\MNK\obj\Debug\MNK.csproj.GenerateResource.cache
+C:\Users\user\Desktop\отчет за 23.03\С# линии\MNK\obj\Debug\MNK.exe
+C:\Users\user\Desktop\отчет за 23.03\С# линии\MNK\obj\Debug\MNK.pdb
+H:\Учеба\Магистратура\Диссертация\С# линии\MNK\bin\Debug\MNK.exe.config
+H:\Учеба\Магистратура\Диссертация\С# линии\MNK\bin\Debug\MNK.exe
+H:\Учеба\Магистратура\Диссертация\С# линии\MNK\bin\Debug\MNK.pdb
+H:\Учеба\Магистратура\Диссертация\С# линии\MNK\obj\Debug\MNK.csprojAssemblyReference.cache
+H:\Учеба\Магистратура\Диссертация\С# линии\MNK\obj\Debug\MNK.Form1.resources
+H:\Учеба\Магистратура\Диссертация\С# линии\MNK\obj\Debug\MNK.Properties.Resources.resources
+H:\Учеба\Магистратура\Диссертация\С# линии\MNK\obj\Debug\MNK.csproj.GenerateResource.cache
+H:\Учеба\Магистратура\Диссертация\С# линии\MNK\obj\Debug\MNK.csproj.CoreCompileInputs.cache
+H:\Учеба\Магистратура\Диссертация\С# линии\MNK\obj\Debug\MNK.exe
+H:\Учеба\Магистратура\Диссертация\С# линии\MNK\obj\Debug\MNK.pdb

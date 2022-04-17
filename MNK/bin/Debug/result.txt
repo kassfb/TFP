@@ -1,0 +1,15 @@
+ m_diff= 7,33000139620017E-06 phase_transition X= 262 Y= -1,76449710883E-05
+ m_diff= 8,66000279220046E-06 phase_transition X= 327 Y= -3,89249715984E-05
+ m_diff= 7,3299977581994E-06 phase_transition X= 379 Y= -3,69149721488E-05
+ m_diff= 7,97997927290222E-06 phase_transition X= 407 Y= 0,0002952450304292
+ m_diff= 9,30996611720543E-06 phase_transition X= 409 Y= 0,000292585027637
+ m_diff= 7,98003748051526E-06 phase_transition X= 427 Y= -0,0002620249870233
+ m_diff= 8,6700004229002E-06 phase_transition X= 468 Y= -1,6984970115E-05
+ m_diff= 7,01001036350009E-06 phase_transition X= 550 Y= 2,79050268445E-05
+ m_diff= 7,98998963638791E-06 phase_transition X= 696 Y= 0,0002154450339731
+ m_diff= 7,32000558440167E-06 phase_transition X= 821 Y= -3,62549693566E-05
+ m_diff= 7,33999720780079E-06 phase_transition X= 908 Y= -3,56049696519E-05
+ m_diff= 7,00000363790056E-06 phase_transition X= 978 Y= -3,5934971048E-05
+phase_transition_count= 12
+END
+TIME = 0 sec
