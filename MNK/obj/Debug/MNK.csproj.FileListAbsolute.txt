@@ -100,3 +100,13 @@ H:\Учеба\Магистратура\Диссертация\С# линии\MNK
 H:\Учеба\Магистратура\Диссертация\С# линии\MNK\obj\Debug\MNK.csproj.CoreCompileInputs.cache
 H:\Учеба\Магистратура\Диссертация\С# линии\MNK\obj\Debug\MNK.exe
 H:\Учеба\Магистратура\Диссертация\С# линии\MNK\obj\Debug\MNK.pdb
+H:\Учеба\Магистратура\Диссертация\TFP\TFP\MNK\bin\Debug\MNK.exe.config
+H:\Учеба\Магистратура\Диссертация\TFP\TFP\MNK\bin\Debug\MNK.exe
+H:\Учеба\Магистратура\Диссертация\TFP\TFP\MNK\bin\Debug\MNK.pdb
+H:\Учеба\Магистратура\Диссертация\TFP\TFP\MNK\obj\Debug\MNK.csprojAssemblyReference.cache
+H:\Учеба\Магистратура\Диссертация\TFP\TFP\MNK\obj\Debug\MNK.Form1.resources
+H:\Учеба\Магистратура\Диссертация\TFP\TFP\MNK\obj\Debug\MNK.Properties.Resources.resources
+H:\Учеба\Магистратура\Диссертация\TFP\TFP\MNK\obj\Debug\MNK.csproj.GenerateResource.cache
+H:\Учеба\Магистратура\Диссертация\TFP\TFP\MNK\obj\Debug\MNK.csproj.CoreCompileInputs.cache
+H:\Учеба\Магистратура\Диссертация\TFP\TFP\MNK\obj\Debug\MNK.exe
+H:\Учеба\Магистратура\Диссертация\TFP\TFP\MNK\obj\Debug\MNK.pdb

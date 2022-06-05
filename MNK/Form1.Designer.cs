@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this._dgw_xy = new System.Windows.Forms.DataGridView();
             this.X = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Y = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,8 +43,11 @@
             this._bt_drawG = new System.Windows.Forms.Button();
             this._tb_eps = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this._dgw_xy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._picb_graphic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // _dgw_xy
@@ -50,11 +57,11 @@
             this._dgw_xy.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.X,
             this.Y});
-            this._dgw_xy.Location = new System.Drawing.Point(3, 59);
+            this._dgw_xy.Location = new System.Drawing.Point(3, 76);
             this._dgw_xy.Name = "_dgw_xy";
             this._dgw_xy.RowHeadersVisible = false;
             this._dgw_xy.RowHeadersWidth = 80;
-            this._dgw_xy.Size = new System.Drawing.Size(281, 379);
+            this._dgw_xy.Size = new System.Drawing.Size(281, 362);
             this._dgw_xy.TabIndex = 0;
             // 
             // X
@@ -85,10 +92,9 @@
             // 
             this.richTextBox1.Location = new System.Drawing.Point(290, 382);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(666, 51);
+            this.richTextBox1.Size = new System.Drawing.Size(686, 51);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
-            this.richTextBox1.Visible = false;
             // 
             // _bt_culc
             // 
@@ -102,9 +108,11 @@
             // 
             // _picb_graphic
             // 
-            this._picb_graphic.Location = new System.Drawing.Point(290, 3);
+            this._picb_graphic.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this._picb_graphic.Location = new System.Drawing.Point(982, 3);
             this._picb_graphic.Name = "_picb_graphic";
-            this._picb_graphic.Size = new System.Drawing.Size(675, 435);
+            this._picb_graphic.Size = new System.Drawing.Size(297, 373);
             this._picb_graphic.TabIndex = 5;
             this._picb_graphic.TabStop = false;
             // 
@@ -121,6 +129,7 @@
             // 
             // _tb_eps
             // 
+            this._tb_eps.Enabled = false;
             this._tb_eps.Location = new System.Drawing.Point(194, 33);
             this._tb_eps.Name = "_tb_eps";
             this._tb_eps.Size = new System.Drawing.Size(90, 20);
@@ -137,11 +146,49 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Параметр фильтрации eps =";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Checked = true;
+            this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.checkBox1.Location = new System.Drawing.Point(5, 53);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(59, 20);
+            this.checkBox1.TabIndex = 9;
+            this.checkBox1.Text = "Авто";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            this.chart1.Location = new System.Drawing.Point(290, 3);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Name = "Series1";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.Name = "Series2";
+            this.chart1.Series.Add(series1);
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(686, 373);
+            this.chart1.TabIndex = 10;
+            this.chart1.Text = "chart1";
+            title1.Name = "Title1";
+            this.chart1.Titles.Add(title1);
+            this.chart1.AnnotationPositionChanged += new System.EventHandler(this.chart1_AnnotationPositionChanged);
+            this.chart1.AnnotationPositionChanging += new System.EventHandler<System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs>(this.chart1_AnnotationPositionChanging);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(977, 445);
+            this.ClientSize = new System.Drawing.Size(1283, 444);
+            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this._tb_eps);
             this.Controls.Add(this._bt_drawG);
@@ -151,9 +198,10 @@
             this.Controls.Add(this._bt_open);
             this.Controls.Add(this._dgw_xy);
             this.Name = "Form1";
-            this.Text = "Поиск и фильтрация точек фазового перехода";
+            this.Text = "Параллельные алгоритмы определения интервалов и сегментов ЭКГ";
             ((System.ComponentModel.ISupportInitialize)(this._dgw_xy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._picb_graphic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,6 +220,8 @@
         private System.Windows.Forms.Button _bt_drawG;
         private System.Windows.Forms.TextBox _tb_eps;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }
 
