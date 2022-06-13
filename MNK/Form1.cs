@@ -100,19 +100,21 @@ namespace MNK
                 }
                 //culc(num_reverse);
             }
-            culc(num);
-            //var result = GetPoints(num, num_reverse);
-            //draw_points = result;
+            //culc(num);
+            var result = GetPoints(num, num_reverse);
+            draw_points = result;
         }
 
         public List<float> GetPoints(double[,] num, double[,] num_reverse)
         {
-            List<float> drawPointsForward;
-            List<float> drawPointsReverse;
+            List<float> drawPointsForward = new List<float>();
+            List<float> drawPointsReverse = new List<float>();
             culc(num_reverse);
-            drawPointsReverse = draw_points;
+            drawPointsReverse.AddRange(draw_points);
+            //drawPointsReverse = draw_points;
             culc(num);
-            drawPointsForward = draw_points;
+            drawPointsForward.AddRange(draw_points);
+            //drawPointsForward = draw_points;
             var drawPointsResult = drawPointsForward.Intersect(drawPointsReverse);  //only equal
             if (drawPointsResult.ToList().Count < requirePoints)
             {
@@ -268,61 +270,62 @@ namespace MNK
                 Color.FromArgb(64, Color.LightCoral), Color.FromArgb(64, Color.Green), Color.FromArgb(64, Color.Orange)};
             List<double> pqrstCoords = new List<double>(10);
             pqrstCoords.Clear();
-            if(draw_points.Count >= requirePoints)
+            if (draw_points.Count >= requirePoints * 2)
             {
-                for(int i = 0; i < draw_points.Count; i++)
+                for (int i = 0; i < draw_points.Count; i++)
                 {
                     //pqrstCoords[i] = draw_points[i];
                     pqrstCoords.Add(draw_points[i]);
                 }
-            }
 
-            for (int i = 0; i < 5; i++)
-            {
-                StripLine sl = new StripLine();
-                switch (i)
+
+                for (int i = 0; i < 5; i++)
                 {
-                    case 0: 
-                        sl.Text = "P";
-                        sl.StripWidth = pqrstCoords[i * 2 + 2] - pqrstCoords[i * 2];
-                        sl.IntervalOffset = pqrstCoords[i * 2];
-                        break;
-                    case 1: 
-                        sl.Text = "PQ";
-                        sl.StripWidth = pqrstCoords[i * 2 + 2] - pqrstCoords[i * 2];
-                        sl.IntervalOffset = pqrstCoords[i * 2];
-                        break;
-                    case 2: 
-                        sl.Text = "QRS";
-                        //sl.StripWidth = pqrstCoords[draw_points.Count - 8] - pqrstCoords[i * 2];
-                        sl.StripWidth = pqrstCoords[i * 2 + 20] - pqrstCoords[i * 2];
-                        sl.IntervalOffset = pqrstCoords[i * 2];
-                        break;
-                    case 3:
-                        sl.Text = "ST";
-                        sl.StripWidth = pqrstCoords[i * 2 + 22] - pqrstCoords[i * 2 + 18];
-                        sl.IntervalOffset = pqrstCoords[i * 2 + 18];  //This is where the stripline starts (x-position)
-                        //обход с конца
-                        //sl.StripWidth = pqrstCoords[draw_points.Count - 6] - pqrstCoords[draw_points.Count - 8];
-                        //sl.IntervalOffset = pqrstCoords[draw_points.Count - 8];  //This is where the stripline starts (x-position)
-                        break;
-                    case 4:
-                        sl.Text = "T";
-                        sl.StripWidth = pqrstCoords[i * 2 + 26] - pqrstCoords[i * 2 + 20];
-                        sl.IntervalOffset = pqrstCoords[i * 2 + 20];  //This is where the stripline starts (x-position)
-                        //обход с конца
-                        //sl.StripWidth = pqrstCoords[draw_points.Count - 4] - pqrstCoords[draw_points.Count - 6];
-                        //sl.IntervalOffset = pqrstCoords[draw_points.Count - 6];  //This is where the stripline starts (x-position)
-                        break;
-                    default: 
-                        sl.Text = "undefined"; break;
+                    StripLine sl = new StripLine();
+                    switch (i)
+                    {
+                        case 0:
+                            sl.Text = "P";
+                            sl.StripWidth = pqrstCoords[i * 2 + 2] - pqrstCoords[i * 2];
+                            sl.IntervalOffset = pqrstCoords[i * 2];
+                            break;
+                        case 1:
+                            sl.Text = "PQ";
+                            sl.StripWidth = pqrstCoords[i * 2 + 2] - pqrstCoords[i * 2];
+                            sl.IntervalOffset = pqrstCoords[i * 2];
+                            break;
+                        case 2:
+                            sl.Text = "QRS";
+                            //sl.StripWidth = pqrstCoords[draw_points.Count - 8] - pqrstCoords[i * 2];
+                            sl.StripWidth = pqrstCoords[i * 2 + 20] - pqrstCoords[i * 2];
+                            sl.IntervalOffset = pqrstCoords[i * 2];
+                            break;
+                        case 3:
+                            sl.Text = "ST";
+                            sl.StripWidth = pqrstCoords[i * 2 + 22] - pqrstCoords[i * 2 + 18];
+                            sl.IntervalOffset = pqrstCoords[i * 2 + 18];  //This is where the stripline starts (x-position)
+                                                                          //обход с конца
+                                                                          //sl.StripWidth = pqrstCoords[draw_points.Count - 6] - pqrstCoords[draw_points.Count - 8];
+                                                                          //sl.IntervalOffset = pqrstCoords[draw_points.Count - 8];  //This is where the stripline starts (x-position)
+                            break;
+                        case 4:
+                            sl.Text = "T";
+                            sl.StripWidth = pqrstCoords[i * 2 + 26] - pqrstCoords[i * 2 + 20];
+                            sl.IntervalOffset = pqrstCoords[i * 2 + 20];  //This is where the stripline starts (x-position)
+                                                                          //обход с конца
+                                                                          //sl.StripWidth = pqrstCoords[draw_points.Count - 4] - pqrstCoords[draw_points.Count - 6];
+                                                                          //sl.IntervalOffset = pqrstCoords[draw_points.Count - 6];  //This is where the stripline starts (x-position)
+                            break;
+                        default:
+                            sl.Text = "undefined"; break;
+                    }
+                    sl.TextAlignment = StringAlignment.Center;
+                    sl.TextOrientation = TextOrientation.Horizontal;
+                    //sl.StripWidth = pqrstCoords[i*2+2] - pqrstCoords[i*2];      //next point - current point
+                    //sl.IntervalOffset = pqrstCoords[i*2];                       //This is where the stripline starts (x-position)
+                    sl.BackColor = colors[i];
+                    chart1.ChartAreas[0].AxisX.StripLines.Add(sl);
                 }
-                sl.TextAlignment = StringAlignment.Center;
-                sl.TextOrientation = TextOrientation.Horizontal;
-                //sl.StripWidth = pqrstCoords[i*2+2] - pqrstCoords[i*2];      //next point - current point
-                //sl.IntervalOffset = pqrstCoords[i*2];                       //This is where the stripline starts (x-position)
-                sl.BackColor = colors[i];
-                chart1.ChartAreas[0].AxisX.StripLines.Add(sl);
             }
             ///DRAW SOURCE CHART
             chart1.Series[0].Points.Clear();
