@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this._dgw_xy = new System.Windows.Forms.DataGridView();
             this.X = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Y = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,6 +45,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this._bt_approx = new System.Windows.Forms.Button();
+            this._bt_drawChart = new System.Windows.Forms.Button();
+            this._tb_MovingAverageWidth = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this._dgw_xy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._picb_graphic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -52,6 +55,8 @@
             // 
             // _dgw_xy
             // 
+            this._dgw_xy.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this._dgw_xy.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this._dgw_xy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this._dgw_xy.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -61,8 +66,9 @@
             this._dgw_xy.Name = "_dgw_xy";
             this._dgw_xy.RowHeadersVisible = false;
             this._dgw_xy.RowHeadersWidth = 80;
-            this._dgw_xy.Size = new System.Drawing.Size(281, 362);
+            this._dgw_xy.Size = new System.Drawing.Size(355, 362);
             this._dgw_xy.TabIndex = 0;
+            this._dgw_xy.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this._dgw_xy_RowsAdded);
             // 
             // X
             // 
@@ -78,7 +84,7 @@
             // 
             this._bt_open.Location = new System.Drawing.Point(2, 3);
             this._bt_open.Name = "_bt_open";
-            this._bt_open.Size = new System.Drawing.Size(90, 25);
+            this._bt_open.Size = new System.Drawing.Size(90, 52);
             this._bt_open.TabIndex = 1;
             this._bt_open.Text = "Открыть файл";
             this._bt_open.UseVisualStyleBackColor = true;
@@ -90,17 +96,18 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(290, 382);
+            this.richTextBox1.Location = new System.Drawing.Point(364, 382);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(686, 51);
+            this.richTextBox1.Size = new System.Drawing.Size(612, 51);
             this.richTextBox1.TabIndex = 3;
             this.richTextBox1.Text = "";
             // 
             // _bt_culc
             // 
-            this._bt_culc.Location = new System.Drawing.Point(98, 3);
+            this._bt_culc.Enabled = false;
+            this._bt_culc.Location = new System.Drawing.Point(95, 3);
             this._bt_culc.Name = "_bt_culc";
-            this._bt_culc.Size = new System.Drawing.Size(90, 25);
+            this._bt_culc.Size = new System.Drawing.Size(96, 25);
             this._bt_culc.TabIndex = 4;
             this._bt_culc.Text = "Расчет";
             this._bt_culc.UseVisualStyleBackColor = true;
@@ -108,9 +115,8 @@
             // 
             // _picb_graphic
             // 
-            this._picb_graphic.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this._picb_graphic.Location = new System.Drawing.Point(982, 3);
+            this._picb_graphic.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this._picb_graphic.Location = new System.Drawing.Point(656, 3);
             this._picb_graphic.Name = "_picb_graphic";
             this._picb_graphic.Size = new System.Drawing.Size(297, 373);
             this._picb_graphic.TabIndex = 5;
@@ -119,18 +125,19 @@
             // _bt_drawG
             // 
             this._bt_drawG.Enabled = false;
-            this._bt_drawG.Location = new System.Drawing.Point(194, 3);
+            this._bt_drawG.Location = new System.Drawing.Point(283, 3);
             this._bt_drawG.Name = "_bt_drawG";
-            this._bt_drawG.Size = new System.Drawing.Size(90, 25);
+            this._bt_drawG.Size = new System.Drawing.Size(80, 25);
             this._bt_drawG.TabIndex = 6;
             this._bt_drawG.Text = "График";
             this._bt_drawG.UseVisualStyleBackColor = true;
+            this._bt_drawG.Visible = false;
             this._bt_drawG.Click += new System.EventHandler(this._bt_drawG_Click);
             // 
             // _tb_eps
             // 
             this._tb_eps.Enabled = false;
-            this._tb_eps.Location = new System.Drawing.Point(194, 33);
+            this._tb_eps.Location = new System.Drawing.Point(268, 55);
             this._tb_eps.Name = "_tb_eps";
             this._tb_eps.Size = new System.Drawing.Size(90, 20);
             this._tb_eps.TabIndex = 7;
@@ -140,11 +147,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(2, 34);
+            this.label1.Location = new System.Drawing.Point(220, 56);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(194, 16);
+            this.label1.Size = new System.Drawing.Size(41, 16);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Параметр фильтрации eps =";
+            this.label1.Text = "eps =";
             // 
             // checkBox1
             // 
@@ -152,44 +159,82 @@
             this.checkBox1.Checked = true;
             this.checkBox1.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.checkBox1.Location = new System.Drawing.Point(5, 53);
+            this.checkBox1.Location = new System.Drawing.Point(6, 55);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(59, 20);
+            this.checkBox1.Size = new System.Drawing.Size(220, 20);
             this.checkBox1.TabIndex = 9;
-            this.checkBox1.Text = "Авто";
+            this.checkBox1.Text = "[Авто] Параметр фильтрации";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            this.chart1.Location = new System.Drawing.Point(290, 3);
+            this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            this.chart1.Location = new System.Drawing.Point(364, 3);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Name = "Series1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Name = "Series2";
-            this.chart1.Series.Add(series1);
-            this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(686, 373);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Name = "Series1";
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.Name = "Series2";
+            this.chart1.Series.Add(series3);
+            this.chart1.Series.Add(series4);
+            this.chart1.Size = new System.Drawing.Size(589, 435);
             this.chart1.TabIndex = 10;
             this.chart1.Text = "chart1";
-            title1.Name = "Title1";
-            this.chart1.Titles.Add(title1);
+            title2.Name = "Title1";
+            this.chart1.Titles.Add(title2);
             this.chart1.AnnotationPositionChanged += new System.EventHandler(this.chart1_AnnotationPositionChanged);
             this.chart1.AnnotationPositionChanging += new System.EventHandler<System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs>(this.chart1_AnnotationPositionChanging);
+            // 
+            // _bt_approx
+            // 
+            this._bt_approx.Enabled = false;
+            this._bt_approx.Location = new System.Drawing.Point(95, 30);
+            this._bt_approx.Name = "_bt_approx";
+            this._bt_approx.Size = new System.Drawing.Size(96, 25);
+            this._bt_approx.TabIndex = 11;
+            this._bt_approx.Text = "Аппроксимация";
+            this._bt_approx.UseVisualStyleBackColor = true;
+            this._bt_approx.Visible = false;
+            this._bt_approx.Click += new System.EventHandler(this._bt_approx_Click);
+            // 
+            // _bt_drawChart
+            // 
+            this._bt_drawChart.Enabled = false;
+            this._bt_drawChart.Location = new System.Drawing.Point(197, 3);
+            this._bt_drawChart.Name = "_bt_drawChart";
+            this._bt_drawChart.Size = new System.Drawing.Size(80, 25);
+            this._bt_drawChart.TabIndex = 12;
+            this._bt_drawChart.Text = "График";
+            this._bt_drawChart.UseVisualStyleBackColor = true;
+            this._bt_drawChart.Click += new System.EventHandler(this._bt_drawChart_Click);
+            // 
+            // _tb_MovingAverageWidth
+            // 
+            this._tb_MovingAverageWidth.Location = new System.Drawing.Point(197, 33);
+            this._tb_MovingAverageWidth.Name = "_tb_MovingAverageWidth";
+            this._tb_MovingAverageWidth.Size = new System.Drawing.Size(90, 20);
+            this._tb_MovingAverageWidth.TabIndex = 13;
+            this._tb_MovingAverageWidth.Text = "15";
+            this._tb_MovingAverageWidth.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1283, 444);
+            this.ClientSize = new System.Drawing.Size(957, 444);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this._tb_MovingAverageWidth);
+            this.Controls.Add(this._bt_drawChart);
+            this.Controls.Add(this._bt_approx);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this._tb_eps);
             this.Controls.Add(this._bt_drawG);
             this.Controls.Add(this._picb_graphic);
@@ -198,7 +243,7 @@
             this.Controls.Add(this._bt_open);
             this.Controls.Add(this._dgw_xy);
             this.Name = "Form1";
-            this.Text = "Параллельные алгоритмы определения интервалов и сегментов ЭКГ";
+            this.Text = "Определение интервалов и сегментов ЭКГ";
             ((System.ComponentModel.ISupportInitialize)(this._dgw_xy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._picb_graphic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
@@ -222,6 +267,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.Button _bt_approx;
+        private System.Windows.Forms.Button _bt_drawChart;
+        private System.Windows.Forms.TextBox _tb_MovingAverageWidth;
     }
 }
 
